@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a1931;
+  font-family: "Segoe UI", sans-serif;
+  padding: 50px 20px;
+}
+
+.card {
+  background: #132238;
+  width: 90%;
+  max-width: 850px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.card img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+  background: white;
+}
+
+.info {
+  flex: 1;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #38bdf8;
+  margin: 15px 0;
+}
+
+p {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.skills span {
+  background: #38bdf8;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.links a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.newsletter {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: white;
+  cursor: pointer;
+}
+
+.card {
+  margin: 0 auto;
+}
+
+.projects {
+  width: 90%;
+  max-width: 850px;
+  margin: 40px auto 0;
+}
+
+.projects h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  background: #132238;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #38bdf8;
+}
+.project-card:hover{
+      background: linear-gradient(to top ,rgb(16, 73, 119),rgba(2, 49, 81, 0.432)) ;
+}
+
+.project-card p {
+  color: #cbd5e1;
+}
+
+.project-card a {
+  color: #38bdf8;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* Responsive téléphone */
+@media (max-width: 700px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .card img {
+    width: 180px;
+    height: 180px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .skills,
+  .links {
+    justify-content: center;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
